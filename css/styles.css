@@ -130,6 +130,11 @@ p {
     padding-bottom:2%;
   }
 
+.servicecard {
+  object-fit: cover;
+   height: 100%;
+}
+
 .ourservicep {
     padding: 0 2% !important;
   }
