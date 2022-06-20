@@ -1,5 +1,5 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif !important;
   font-family: 'Montserrat', sans-serif;
   /*background: url('https://media.istockphoto.com/photos/portrait-of-multicultural-medical-team-standing-in-hospital-corridor-picture-id1204177269?k=20&m=1204177269&s=612x612&w=0&h=gBL8z_6qD6MuEeVZjgrkXUMepp8zwpIEj21LqSbnpZ8=');
   /*background: url('');
@@ -78,8 +78,105 @@ p {
 
 @media (max-width: 700px) {
   .firstconpad {
-    padding-top: 4rem !important;
+    padding-top: 0rem !important;
     padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .secondbr {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sectiontop {
+    padding-top: 10%;
+  }
+}
+
+section {
+  height:;
+  width: 100%;
+  background-color:;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #455434;
+}
+button[type="submit"]:hover {
+  background-color: #455434;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
