@@ -42,6 +42,10 @@ body {
     .servicelistmargin {
       margin-bottom: 5% !important;
     }
+
+    .mapmobile {
+    display: none !important;
+}
   }
 
   .nav-item {
